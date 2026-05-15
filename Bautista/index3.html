@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title> DEBUG ME! - Find & Fix Link Errors</title>
+
+ <style>
+
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+
+  .error { background: #ffebee; border-left: 5px solid #f44336; padding: 15px; margin: 10px 0; }
+
+  .correct { background: #e8f5e8; border-left: 5px solid #4caf50; padding: 15px; margin: 10px 0; }
+
+  h2 { color: #333; }
+
+  pre { background: #f5f5f5; padding: 10px; border-radius: 5px; }
+
+ </style>
+
+</head>
+
+
+
+<body>
+
+ <header>
+
+  <h1> DEBUGGING CHALLENGE: Fix All Link Errors!</h1>
+
+  <p><strong>Instructions:</strong> Find the <span style="color:red;">BROKEN links</span> below. 
+
+  Fix the errors and test them. <strong>Score: 10/10 when all work!</strong></p>
+
+ </header>
+
+
+
+ <nav>
+
+  <h2>🔗 Link Types - Some Work, Some Don't! </h2>
+
+
+
+  <!-- 1. ABSOLUTE URL - BROKEN (missing https://) -->
+
+  <div class="correct">
+
+   <strong> 1. Absolute URL (WORKS):</strong><br>
+
+   <a href="https://www.google.com">Visit Google</a> 
+
+  </div>
+
+
+
+  <!-- 2. RELATIVE URL - BROKEN (wrong path) -->
+
+  <div class="correct">
+
+   <strong> 2. Relative URL (WORKS):</strong><br>
+
+   <a href="index.html">Go to Page</a>
+
+  </div>
+
+
+
+  <!-- 3. EMAIL LINK - CORRECT -->
+
+  <div class="correct">
+
+   <strong> 3. Email Link (WORKS):</strong><br>
+
+   <a href="mailto:student@example.com?subject=Help!">Email Teacher</a>
+
+  </div>
+
+
+
+  <!-- 4. PHONE LINK - BROKEN (missing +) -->
+
+  <div class="correct">
+
+   <strong> 4. Phone Link (WORKS):</strong><br>
+
+   <a href="tel:+1234567890">Call Support</a>
+
+  </div>
+
+
+
+  <!-- 5. IMAGE LINK - BROKEN (missing alt & wrong src) -->
+
+  <div class="correct">
+
+   <strong> 5. Image Link (WORKS):</strong><br>
+   
+   <a href="img.html">Photo Link</a>
+
+  </div>
+
+
+
+  <!-- 6. ANCHOR LINK - BROKEN (wrong ID) -->
+
+  <div class="correct">
+
+   <strong> 6. Anchor Link (WORKS):</strong><br>
+
+   <a href="#bottom-section">Jump to Bottom</a>
+
+   <article id="bottom-section"></article>
+
+  </div>
+
+
+
+  <!-- 7. BONUS: EMPTY LINK - BROKEN -->
+
+  <div class="correct">
+
+   <strong> 7. Empty Link (WORKS):</strong><br>
+
+   <a href="index2.html">Index2</a>
+
+  </div>
+
+ </nav>
+
+
+
+ <main>
+
+  <section>
+
+   <h2> YOUR DEBUGGING CHECKLIST</h2>
+
+   <pre>
+
+1. Absolute: Needs https://www.
+
+2. Relative: Needs real file path
+
+3. Email: Already works!
+
+4. Phone: Needs +country code
+
+5. Image: Needs src + alt
+
+6. Anchor: Match #id below
+
+7. Empty: Add href destination
+
+
+
+<strong>Copy this file → Fix errors → Test all links → Score 10/10! </strong>
+
+   </pre>
+
+  </section>
+
+
+
+  <!-- Target for anchor link (ID matches when fixed) -->
+
+  <article id="bottom-section">
+
+   <h2> SUCCESS ZONE</h2>
+
+   <p>If anchor link works, you fixed it! All links should now function perfectly.</p>
+
+  </article>
+
+ </main>
+
+
+
+ <footer>
+
+  <p>&copy; 2026 HTML Debugging Lab | 
+
+   <a href="#top" style="color:blue;">Back to Top</a>
+
+  </p>
+
+ </footer>
+
+</body>
+
+</html>

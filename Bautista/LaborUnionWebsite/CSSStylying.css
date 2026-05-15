@@ -1,0 +1,39 @@
+h2{
+    color:#003366;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid gray;
+}
+
+th{
+    background:#003366;
+    color:white;
+    padding:10px;
+}
+
+td{
+    padding:10px;
+}
+
+.gallery img{
+    width:200px;
+    margin:10px;
+    border-radius:10px;
+}
+
+form{
+    width:60%;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:5px 0;
+}
